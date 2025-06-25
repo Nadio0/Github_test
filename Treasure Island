@@ -1,0 +1,49 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+while True:
+    choice = input("You're at a Path in der Woods. Where do you want to go? Type 'left' or 'right'.\n").lower()
+    if choice == "left":
+        print("you arrive at a House where a Witch lives She casts a spell on you . You are dead.")
+    elif choice == "right":
+        print("you came to a sea and you need to cross it.")
+        choice = input("Do you want to swim or wait for a boat? Type 'swim' or 'wait'.\n").lower()
+        if choice == "swim":
+            print("You were eaten by a shark. You are dead.")
+        elif choice == "wait":
+            print("You waited for a boat and crossed the sea.")
+            choice = input("You arrived on an island and met a man and a dog. The man tells you the dog is dangerous. You look at the dog, and it looks like it wants something from you. 
+What do you want to do? Go with the man type\"man\"Go to the dog type \"dog\"").lower()
+            if choice == "man":
+                print("the man kills you. You are dead.")
+            #continue
+            #break
+            elif choice == "dog":
+                print("The dog is friendly and takes you to a cave. You find a treasure chest!")
+                choice = input("Do you want to open it? Type 'yes' or 'no'.\n").lower()
+                if choice == "yes":
+                    print("Congratulations! You opened the chest and found Gold and Sweets in there!")
+                elif choice == "no":
+                    print("You left the treasure chest unopened. Maybe next time!")
