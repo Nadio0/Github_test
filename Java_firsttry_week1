@@ -1,0 +1,19 @@
+public class Matrix {
+    public static void main(String[] args) {
+        System.out.println("");
+        System.out.println("Matrix");
+        for (int zeile = 0; zeile < 10; zeile++) {
+            for (int spalte = 0; spalte < 10; spalte++) {
+                int number = zeile * 10 + spalte;
+                if (zeile == 4 || spalte == 4 || number % 4 == 0) { // wenn die bedingung erfüllt ist wird ** ausgegeben
+                    System.out.print(" **");
+                } else {
+                    System.out.printf(" %02d", number);
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+//java firsttry
